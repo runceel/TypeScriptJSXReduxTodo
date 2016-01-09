@@ -1,0 +1,27 @@
+{
+  "name": "helloworld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "history": "^1.17.0",
+    "jest": "^0.1.40",
+    "object-assign": "^4.0.1",
+    "react": "^0.14.5",
+    "react-dom": "^0.14.5",
+    "react-redux": "^4.0.6",
+    "react-router": "^1.0.3",
+    "redux": "^3.0.5"
+  },
+  "jest": {
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/fbjs"
+    ]
+  }
+}
