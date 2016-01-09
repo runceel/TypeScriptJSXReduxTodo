@@ -153,7 +153,9 @@
     <TypeScriptCompile Include="scripts\models.ts" />
     <TypeScriptCompile Include="scripts\reducers.ts" />
     <TypeScriptCompile Include="scripts\__tests__\actions-test.ts" />
+    <TypeScriptCompile Include="scripts\__tests__\components-test.tsx" />
     <TypeScriptCompile Include="scripts\__tests__\models-test.ts" />
+    <TypeScriptCompile Include="scripts\__tests__\reducers-test.ts" />
     <TypeScriptCompile Include="typings\history\history.d.ts" />
     <TypeScriptCompile Include="typings\jest\jest.d.ts" />
     <TypeScriptCompile Include="typings\node\node.d.ts" />
@@ -161,6 +163,7 @@
     <TypeScriptCompile Include="typings\react-redux\react-redux.d.ts" />
     <TypeScriptCompile Include="typings\react-router\history.d.ts" />
     <TypeScriptCompile Include="typings\react-router\react-router.d.ts" />
+    <TypeScriptCompile Include="typings\react\react-addons-test-utils.d.ts" />
     <TypeScriptCompile Include="typings\react\react-dom.d.ts" />
     <TypeScriptCompile Include="typings\react\react.d.ts" />
     <TypeScriptCompile Include="typings\redux\redux.d.ts" />
