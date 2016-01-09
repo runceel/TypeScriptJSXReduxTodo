@@ -13,7 +13,7 @@ interface TodoComposerProps extends React.Props<{}> {
     onToggle: (id: number) => void;
 }
 
-class TodoComposer extends React.Component<TodoComposerProps, {}> {
+export class TodoComposer extends React.Component<TodoComposerProps, {}> {
     render() {
         var todo = this.props.todo;
         var style: React.CSSProperties = {
@@ -33,7 +33,7 @@ interface TodoListComposerProps extends React.Props<{}> {
     onToggle: (id: number) => void;
 }
 
-class TodoListComposer extends React.Component<TodoListComposerProps, {}> {
+export class TodoListComposer extends React.Component<TodoListComposerProps, {}> {
     render() {
         var todos = this.props.todos.map(x => <TodoComposer key={x.id} todo={x} onToggle={x => this.props.onToggle(x)}/>);
         return (
@@ -51,7 +51,7 @@ interface TodoFormComposerProps extends React.Props<{}> {
     onAddTodo: (text: string) => void;
 }
 
-class TodoFormComposer extends React.Component<TodoFormComposerProps, {}> {
+export class TodoFormComposer extends React.Component<TodoFormComposerProps, {}> {
     private handleSubmit(e: React.SyntheticEvent) {
         e.preventDefault();
         var text = this.refs['text'] as HTMLInputElement;
@@ -74,7 +74,7 @@ interface TodoListPageProps extends React.Props<{}> {
     dispatch?: Redux.Dispatch;
 }
 
-class TodoListPage extends React.Component<TodoListPageProps, {}> {
+export class TodoListPage extends React.Component<TodoListPageProps, {}> {
     render() {
         var { todoList, dispatch } = this.props;
         return (
@@ -101,7 +101,7 @@ interface TodoListManagePageProps extends React.Props<{}> {
     dispatch?: Redux.Dispatch;
 }
 
-class TodoListManagePage extends React.Component<TodoListManagePageProps, {}> {
+export class TodoListManagePage extends React.Component<TodoListManagePageProps, {}> {
     render() {
         var { todoList, dispatch } = this.props;
         return (

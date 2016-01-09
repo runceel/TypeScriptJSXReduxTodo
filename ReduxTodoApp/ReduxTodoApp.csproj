@@ -152,6 +152,8 @@
     <TypeScriptCompile Include="scripts\components.tsx" />
     <TypeScriptCompile Include="scripts\models.ts" />
     <TypeScriptCompile Include="scripts\reducers.ts" />
+    <TypeScriptCompile Include="scripts\__tests__\actions-test.ts" />
+    <TypeScriptCompile Include="scripts\__tests__\models-test.ts" />
     <TypeScriptCompile Include="typings\history\history.d.ts" />
     <TypeScriptCompile Include="typings\jest\jest.d.ts" />
     <TypeScriptCompile Include="typings\node\node.d.ts" />
